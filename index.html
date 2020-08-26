@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Counter</title>
     <!-- Latest compiled and minified CSS -->
     <link
       rel="stylesheet"
@@ -20,6 +20,7 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   </head>
   <style>
+    @import url("https://fonts.googleapis.com/css2?family=Lato:wght@100;400&display=swap");
     :root {
       --mainWhite: #f5f5f5;
       --mainGreen: #7fb800;
@@ -33,10 +34,11 @@
     body {
       background: #bdb88b;
       color: var(--mainWhite);
+      font-family: "Lato", sans-serif;
+      box-sizing: border-box;
     }
     .main-container {
       border: 0.1rem solid var(--mainWhite);
-      box-shadow: 0 0.5rem 0.5rem rgba(0, 0, 0, 0.9);
       border-radius: 0.2rem;
     }
     #counter {
@@ -55,6 +57,13 @@
     }
     .nextBtn:hover {
       background: var(--lightBlue);
+    }
+    .btn-container {
+      display: flex;
+      justify-content: center !important;
+    }
+    #message {
+      padding-top: 10px;
     }
   </style>
   <body>
@@ -103,3 +112,4 @@
     </script>
   </body>
 </html>
+
